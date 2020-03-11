@@ -5,44 +5,43 @@
   <title>Registration Form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <section class="island max-length">
-    <div>
-      <div class="grid grid-middle pad-t-2">
-        <div class="unit s-1">
-          <h1 class="push-0">Want to go to Mars?</h1>
-          <hr class="">
+    <div class="pad-t">
+      <div class="grid grid-middle">
+        <div class="unit xs-1 s-1 m-1">
+          <h1 class="push">Want to go to Mars?</h1>
           <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
         </div>
       </div>
 
-      <form class="grid grid-middle max-length" method="POST" action="index.html">
+      <form class="grid grid-middle max-length" method="POST" action="https://formspree.io/bajr0005@algonquinlive.com">
 
-        <fieldset class="unit s-1">
-          <legend class="giga">Personal details</legend>
+        <fieldset class="unit xs-1 s-1 m-1 push-1-2">
+          <legend class="giga italic ">Personal details</legend>
         </fieldset>
 
         <div class="unit s-1 l-1-2 push">
           <label for="name">Name</label>
-          <input id="name" type="text">
+          <input id="name" name="name" type="text" required>
         </div>
         <div class="unit s-1 l-1-2 push">
           <label for="age">Age</label>
-          <input id="age" type="text">
+          <input id="age" name="age" type="text" required>
         </div>
         <div class="unit s-1 l-1-2 push">
           <label for="email">Email</label>
-          <input id="email" type="email">
+          <input id="email" name="email" type="email">
         </div>
         <div class="unit s-1 l-1-2 push">
           <label for="fitness">Physical fitness</label>
-          <select class="" id="fitness">
+          <select id="fitness" name="physical">
             <option>Super-human</option>
             <option>Fit as a fiddle</option>
             <option>Not terribly strong</option>
@@ -51,22 +50,21 @@
         </div>
         <div class="unit s-1 push">
           <label for="address">Address</label>
-          <textarea id="address"></textarea>
+          <textarea id="address" name="address"></textarea>
         </div>
 
         <fieldset class="unit s-1">
-          <legend class="giga">Personal details</legend>
+          <legend class="giga italic">Mission statement</legend>
         </fieldset>
 
         <div class="unit s-1 push">
           <label for="question">Why do you want to go to Mars?</label>
-          <textarea id="question"></textarea>
+          <textarea id="question" name="why-mars"></textarea>
         </div>
 
         <div class="unit s-1 text-center push">
-          <button class="" type="submit">
-            <input type="hidden" name="_subject" value="Request to join the mission">
-            Register for the trip!</button>
+          <button class="btn" type="submit">Register for the trip!</button>
+          <input type="hidden" name="_subject" value="Request to join the mission">
         </div>
       </form>
     </div>

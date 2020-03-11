@@ -1,14 +1,10 @@
 html {
   background-color: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 section {
   background-color: #fff;
-}
-
-h2 {
-  font-style: italic;
 }
 
 form div {
@@ -17,4 +13,16 @@ form div {
 
 legend {
   padding-right: .5rem;
+}
+
+h1 {
+  border-bottom: .5px solid #000;
+}
+
+@media only screen and (min-width: 60em) {
+
+  form div {
+    padding-right: 1em;
+  }
+
 }
